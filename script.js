@@ -5,8 +5,8 @@ let pwCharacters = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, "`", "~", "!", "@", "#", "$", 
 // create a global variable called "pwLength" with a number between 10 and 18
 let pwLength = 12;
 // Using the above array and password length variable, create a random password using a for loop inside of a function called "addNewPassword" either saved as an arrow function variable or a traditional function
-let password = "";
 function addNewPassword() {
+    let password = "";
     for (let i = 0; i <= pwLength; i++) {
       let randomChar = Math.floor(Math.random() * pwCharacters.length);
       password = password + pwCharacters[randomChar];
